@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hero">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logoo" class="logo" />
+      <div class="top-buttons">
+        <select id="language">
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
+        <button onclick="SignIn">Sign In</button>
+      </div>
+    </div>
+    <div class="center-content">
+      <h1><b>Unlimited movies, TV shows and more</b></h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="input-area">
+        <input type="email" placeholder="Email address" />
+        <button onclick="getStarted()">Get Started</button>
+      </div>
+    </div>
+  </div>
+<div id="signInModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="toggleModal()">&times;</span>
+    <h2>Sign In</h2>
+    <input type="text" placeholder="Email or phone number" />
+    <input type="password" placeholder="Password" />
+    <button onclick="signIn()">Sign In</button>
+  </div>
+</div>
+
+  <section id="trending">
+  <h2>Trending Now</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+    <div class="carousel" id="movieCarousel">
+     <b>1</b> <img src="assets/images/squidgame.jpg" alt="squidgame" />
+      <b>2 </b><img src="assets/images/raid2.jpg" alt="raid2" />
+     <b>3</b> <img src="assets/images/kapil.jpg" alt="thegreatkapilshow" />
+     <b>4</b> <img src="assets/images/aap jaisa koi.jpg" alt="Aapjaisakoi" />
+      <b>5</b><img src="assets/images/jaat.jpg" alt="jaat" />
+      <b>6</b><img src="assets/images/thuglife.jpg" alt="thuglife" />
+      <b>7</b><img src="assets/images/hit.jpg" alt="hit" />
+     <b>8</b> <img src="assets/images/rananaidu.jpg" alt="rananaidu" />
+     <b>9</b> <img src="assets/images/chava.jpg" alt="chava" />
+     <b>10</b> <img src="assets/images/vasantalu.jpg" alt="vasantalu" />
+      </div>
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+
+  <section id="reasons">
+    <h2>More Reasons to Join</h2>
+    <ul>
+      <li>📱 Watch on any device</li>
+      <li>🕒 Cancel anytime</li>
+      <li>🎁 New content every week</li>
+    </ul>
+  </section>
+<section class="faq">
+        <div class="faq-head">Frequently Asked Questions
+        </div>
+        <div class="faq-boxes">
+            <div class="box-2">
+                <span>What is Netflix?</span>
+                <span><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="box-2">
+                <span>How much does Netflix cost?</span>
+                <span><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="box-2">
+                <span>Where can I watch?</span>
+                <span><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="box-2">
+                <span>How do I cancel?</span>
+                <span><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="box-2">
+                <span>What can I watch on Netflix?</span>
+                <span><i class="fa-solid fa-plus"></i></span>
+            </div>
+            <div class="box-2">
+                <span>Is Netflix good for children?</span>
+                <span><i class="fa-solid fa-plus"></i></span>
+            </div>
+        </div>
+    </section>
+    <section class="final-sea">
+        <div class="ready">Ready to watch? Enter your email to create or restart your membership.</div>
+        <div class="searc">
+            <input type="text" class="inp" placeholder="Email Address">
+            <button class="getS">Get Started <i class="fa-solid fa-angle-right"></i></button>
+
+        </div>
+    </section>
+    <div class="gap"></div>
+    <div class="questions">Questions? Call <a href="tel:000-800-919-1694">000-800-919-1694</a></div>
+    <footer>
+        <div class="g1">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Ways to watch</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="g2">
+            <a href="#">Corporate Information</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="g3">
+            <a href="#">Help Centre</a>
+            <a href="#">Media Centre</a>
+            <a href="#">Jobs</a>
+            <a href="#">Terms Of Use</a>
+        </div>
+        <div class="g4">
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Contact US</a>
+            <a href="#">Legal Notices</a>
+        
+        </div>
+    </footer>
+  <button class="scroll-top" onclick="scrollToTop()">⬆ Scroll to Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
